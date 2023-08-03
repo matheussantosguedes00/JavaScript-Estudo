@@ -167,4 +167,89 @@ console.log(cor);
 
 mostraCor();
 
-//58:37
+//hoisting =içamento
+
+testeHoisting();
+
+function testeHoisting(){
+    console.log("Deu certo!")
+}
+
+//arrow function
+const testeArrow =()=>console.log("Isso Também e uma função.")
+
+testeArrow();
+
+//trurhy e falsy
+const minhaVariavell = ""//falsy
+const minhaVariavel2 = "Algun texto"//trurhy
+
+if(minhaVariavell){
+    console.log("É verdadeiro!")
+}else{
+    console.log("É falso!")
+}
+
+if(minhaVariavel2){
+    console.log("É verdadeiro! 2")
+}else{
+    console.log("É falso! 2")
+}
+
+//array, lista
+const numeros =[1,2,3,4,5]
+
+console.log(numeros);
+
+console.log(numeros[0]);
+
+console.log(numeros[2]);
+
+numeros.push(6)
+
+console.log(numeros);
+
+//prototype => OBJETO -> objeto2
+//Array => nossos arrays
+numeros.pop();
+
+console.log(numeros);
+
+//string
+
+const minhaStringNova ="Olá, Mundo!"
+
+//concatenação com +
+const minhaString3 =minhaStringNova + "Como você esta?"
+
+console.log(minhaStringNova);
+
+console.log(minhaString3);
+
+//interpolação
+
+const minhaString4 =`${minhaStringNova} Como você esta?`
+
+console.log(minhaString4);
+
+console.log(minhaString4.length);//Quantidade de caracteres
+
+console.log(minhaString4[5]);//Quantidade de caracteres
+console.log(minhaString4.toUpperCase())
+
+//Data e hora 
+
+const agora =Date();
+console.log(agora);
+
+const natal= new Date(2023,11,25);
+console.log(natal);
+
+//Math
+console.log(Math.PI);//valor do pi 
+
+console.log(Math.round(3.6));//Arredonda para cima vai para 4
+
+console.log(Math.sqrt(16));//Esse e a raiz quadrada do numero no caso o 16
+
+console.log(Math.pow(2,3));//pontencia pasando a base e o expoente
